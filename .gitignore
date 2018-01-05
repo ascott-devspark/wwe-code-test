@@ -1,0 +1,11 @@
+# netbeans php project
+/nbproject/
+
+# backup files
+*~
+
+# PhpStorm files
+.idea
+
+# Modules
+node_modules/*
