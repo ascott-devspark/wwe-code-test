@@ -48,20 +48,35 @@ nav {
         }
     }
 
-    ul {
+    ul.unstyled {
       display: none;
+      position: absolute;
+      top: 65px;
+      right: 19px;
 
       li {
-        padding: 0 1.2rem;
+        padding: 1rem 1.2rem;
+        display: block;
+        background: $font-color;
 
         &:first-child {
           border-right: 2px solid $font-color;
         }
+
+        &:hover {
+            background-color: $buttons-color;
+            text-decoration: underline;
+        }
       }
 
       a {
-          color: $font-color;
+          color: $overlay-color;
           text-decoration: none;
+
+          &:hover {
+            cursor: pointer;
+            color: $font-color;
+          }
       }
 
     }
@@ -71,8 +86,30 @@ nav {
             display: none;
         }
 
-        ul {
+        ul.unstyled {
             display: block;
+            position: inherit;
+            top: 0;
+            right: 0;
+
+            li {
+              padding: 0 1.2rem;
+              display: inline;
+              background: inherit;
+
+              &:hover {
+                  background-color: inherit;
+              }
+
+              &.btn {
+                  background-color: $buttons-color;
+                  padding: 10px 20px;
+              }
+            }
+
+            a {
+              color: $font-color;
+            }
         }
     }
 }

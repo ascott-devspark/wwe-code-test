@@ -44,20 +44,45 @@ nav {
         top: 18px;
         -webkit-transform-origin: left center;
                 transform-origin: left center; }
-  nav ul {
-    display: none; }
-    nav ul li {
-      padding: 0 1.2rem; }
-      nav ul li:first-child {
+  nav ul.unstyled {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 19px; }
+    nav ul.unstyled li {
+      padding: 1rem 1.2rem;
+      display: block;
+      background: #fff; }
+      nav ul.unstyled li:first-child {
         border-right: 2px solid #fff; }
-    nav ul a {
-      color: #fff;
+      nav ul.unstyled li:hover {
+        background-color: #ec1828;
+        text-decoration: underline; }
+    nav ul.unstyled a {
+      color: #000;
       text-decoration: none; }
+      nav ul.unstyled a:hover {
+        cursor: pointer;
+        color: #fff; }
   @media (min-width: 769px) {
     nav .nav-icon {
       display: none; }
-    nav ul {
-      display: block; } }
+    nav ul.unstyled {
+      display: block;
+      position: inherit;
+      top: 0;
+      right: 0; }
+      nav ul.unstyled li {
+        padding: 0 1.2rem;
+        display: inline;
+        background: inherit; }
+        nav ul.unstyled li:hover {
+          background-color: inherit; }
+        nav ul.unstyled li.btn {
+          background-color: #ec1828;
+          padding: 10px 20px; }
+      nav ul.unstyled a {
+        color: #fff; } }
 
 section {
   background-image: url("/images/bg_1.png");
